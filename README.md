@@ -4,29 +4,37 @@ In dieser Abschlussaufgabe werden alle erlernten Fähigkeiten in den Bereichen *
 
 ### **Aufgabenstellung:**
 
-1. **GitHub-Fork erstellen:**
-   - Erstelle einen **Fork** des folgenden GitHub-Repositories: [docker-nodejs-sample](https://github.com/ICT-BLJ/docker-nodejs-sample).
-   - Clone deinen Fork lokal auf deinen Computer.
+ 1. ** GitHub-Fork erstellen:**
 
-2. **Erstellen einer README-Datei in Markdown:**
-   - Erstelle eine **README.md** Datei im Root-Verzeichnis des Projekts.
-   - Die README soll alle Schritte zur **Installation des Projekts** enthalten. Dazu gehören:
-     - Klonen des Repositories
-     - Installation der notwendigen Pakete
-     - Docker-Konfiguration und -Installation
-     - Starten der Applikation in einem Docker-Container
-   - Nutze [Markdown](https://www.markdownguide.org/cheat-sheet/) für die Struktur und Formatierung der Datei.
+Clone deinen Fork lokal auf deinen Computer.
 
-3. **Dokumentation der Vorgehensweise:**
-   - Verfasse eine vollständige **Dokumentation in Word**, in der die Arbeitsschritte beschrieben werden. Diese Schritte sind:
-     - Klonen des Repositories
-     - Einrichtung der Entwicklungsumgebung
-     - Erstellung der README.md
-     - Verwendung von Git (Commit, Push)
-     - Erstellung und Nutzung von Docker-Containern
-   - Verwende die während des Office-Kurses erarbeiteten Kenntnisse für das Erstellen dieses Dokuments.
+**Schritte**
 
-4. **Dockerize das Node.js-Projekt:**
+**1.**  Um eine Fork zu ertsellen muss man zuerst auf Github oben rechts auf Fork klicken und das führt zu einem Fenster beidem man ein neuen Fork erstellen kann.
+
+**2.**  Danach öffnet man Git Bash und gibt git clone https://gethub.com/Shivina27/docker-nodejs-sample.git  ein damit man die geforkte Repositorie klonen kann. 
+
+**3.**  Anschlissend gibst du Cd docker-nodejs-sample ein damit du zum Ordner des geklonten Projekts wechseln kannst. 
+
+ 2. **. Instalation der notwendige Pakete**
+ **Schritte**
+ **1**  Gehe auf Open Folder und öffne dann deine docker-nodejs-sample Folder auf Visual Studio Code.
+
+ **2**  S
+  
+
+ 3. **Docker-Konfiguration und -Installation**
+
+**Schritte**
+
+**1.**  Lade Docker Desktop und Docker for Visual Studio Code von Moodle herunter 
+- Es wird ein Auswahl haben zwischen ARM und Amd im Cmd. Falls du  nicht weisst welche auszuwählen dann gib bei Cmd echo %PROCESSOR_ARCHITECTURE%  ein.
+
+**2.**  Drücke auf die Windowa Tastatur und schreibe Powershell rein .Rechtsclick drauf und öffne es als Administrator und gib diese 2 Befehele rein.  **dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart** und **dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart**.
+
+**3.**  Anschlissend musst du schauen das wsl klappt indem du den Befehl **wsl --set-default-version 2** in Powershell rein schreibst.
+
+4. **Starten der Applikation in einem Docker-Container**
    - Verfolge die Anleitung unter [docs.docker.com](https://docs.docker.com/guides/language/nodejs/containerize/) ab dem Schritt **"Initialize Docker assets"**.
    - Dein Ziel ist es, das Projekt in einem Docker-Container lauffähig zu machen, sodass am Ende eine **ToDo-Applikation** in einem Docker-Container bereitsteht.
 
@@ -45,4 +53,3 @@ In dieser Abschlussaufgabe werden alle erlernten Fähigkeiten in den Bereichen *
 - Containerisieren einer Node.js-Anwendung mit Docker.
 - Dokumentation des gesamten Prozesses in einem Word-Dokument.
   
-Viel Erfolg bei der Umsetzung!
