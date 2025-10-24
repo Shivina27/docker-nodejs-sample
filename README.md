@@ -1,6 +1,4 @@
-# **Thema:** Erstellen einer ToDo-Applikation mit Markdown, Git, GitHub und Docker
 
-In dieser Abschlussaufgabe werden alle erlernten Fähigkeiten in den Bereichen **Markdown**, **Git**, **GitHub** und **Docker** kombiniert. Die Aufgabe besteht darin, eine ToDo-Applikation zu erstellen und diese in einem Docker-Container bereitzustellen.
 
 ### **Aufgabenstellung:**
 
@@ -20,9 +18,14 @@ Clone deinen Fork lokal auf deinen Computer.
  **Schritte**
  **1**  Gehe auf Open Folder und öffne dann deine docker-nodejs-sample Folder auf Visual Studio Code.
 
- **2**  S
+ **2**  Da sind die Pakete
+   **"dependencies": {
+    "express": "^4.18.2",
+    "pg": "^8.11.2",
+    "sqlite3": "^5.1.2",
+    "uuid": "^9.0.0",
+    "wait-port": "^1.0.4"**
   
-
  3. **Docker-Konfiguration und -Installation**
 
 **Schritte**
@@ -35,21 +38,12 @@ Clone deinen Fork lokal auf deinen Computer.
 **3.**  Anschlissend musst du schauen das wsl klappt indem du den Befehl **wsl --set-default-version 2** in Powershell rein schreibst.
 
 4. **Starten der Applikation in einem Docker-Container**
-   - Verfolge die Anleitung unter [docs.docker.com](https://docs.docker.com/guides/language/nodejs/containerize/) ab dem Schritt **"Initialize Docker assets"**.
-   - Dein Ziel ist es, das Projekt in einem Docker-Container lauffähig zu machen, sodass am Ende eine **ToDo-Applikation** in einem Docker-Container bereitsteht.
 
-5. **Git-Workflows:**
-   - Arbeite mit **Git**, um Änderungen regelmäßig zu committen und auf GitHub zu pushen.
-   - Verwende sinnvolle Commit-Nachrichten, um deinen Fortschritt zu dokumentieren.
-   - Stelle sicher, dass dein finaler Stand auf GitHub vorhanden ist.
+Wechsle im Terminal in den Ordner docker-nodejs-sample und gib den Befehl docker init ein. Beantworte die Fragen im Terminal, um das Projekt für Docker einzurichten.
 
-6. **Abgabe:**
-   - **Dokumentation:** Lade die erstellte Word-Dokumentation (inkl. Screenshots und Beschreibung der Schritte) in dein Repository hoch.
-   - **GitHub-Link:** Stelle den Link zu deinem GitHub-Repository bereit, das den finalen Stand des Projekts enthält.
+Danach startest du die Anwendung mit:
+docker compose up --build
 
-### **Ziele der Aufgabe:**
-- Anwendung und Vertiefung von Git und GitHub.
-- Verfassen einer strukturierten Anleitung mit Markdown.
-- Containerisieren einer Node.js-Anwendung mit Docker.
-- Dokumentation des gesamten Prozesses in einem Word-Dokument.
-  
+Öffne im Browser http://localhost:3000
+, um die App zu sehen.
+Wenn es nicht funktioniert, öffne in Visual Studio Code die Datei Dockerfile und ändere die Node.js-Version von 18.0.0 auf 22.18.0. Speichere die Datei und starte den Befehl erneut.
